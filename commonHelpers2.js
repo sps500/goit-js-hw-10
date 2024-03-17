@@ -1,0 +1,2 @@
+import"./assets/styles-4578f0ee.js";import{i as s}from"./assets/vendor-77e16229.js";document.querySelector(".form").addEventListener("submit",function(r){r.preventDefault();const t=parseInt(this.querySelector('[name="delay"]').value),i=this.querySelector('[name="state"]:checked').value;new Promise((e,o)=>{setTimeout(()=>{i==="fulfilled"?e(t):o(t)},t)}).then(e=>{s.success({title:"Success",message:`✅ Fulfilled promise in ${e}ms`})}).catch(e=>{s.error({title:"Error",message:`❌ Rejected promise in ${e}ms`})})});
+//# sourceMappingURL=commonHelpers2.js.map
