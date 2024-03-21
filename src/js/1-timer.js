@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
@@ -15,6 +16,7 @@ const options = {
     if (selectedDate < currentDate) {
       iziToast.error({
         title: 'Error',
+        position: 'topRight',
         message: 'Please choose a date in the future',
       });
       startButton.disabled = true;
@@ -39,6 +41,7 @@ function startTimer() {
   if (endDate <= currentDate) {
     iziToast.error({
       title: 'Error',
+      position: 'topRight',
       message: 'Please choose a future date to start the timer',
     });
     return;

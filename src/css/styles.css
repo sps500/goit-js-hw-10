@@ -104,3 +104,65 @@ button {
 .valid-date {
   border: 1px solid rgba(78, 117, 255, 1);
 }
+/* ==================snackbar====================== */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 160px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+input {
+  width: 360px;
+  height: 40px;
+  top: 36px;
+  left: 156px;
+  gap: 8px;
+  opacity: 0px;
+}
+.chek-input {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  width: 360px;
+  padding: 0;
+}
+.type-chek {
+  width: 160px;
+}
+.button-style-2 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+
+  width: 360px;
+  height: 40px;
+  top: 226px;
+  left: 156px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px 0px 0px 0px;
+  opacity: 0px;
+
+  background: rgba(78, 117, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.delay-one {
+  text-align: left;
+}
+.button-style-2:hover {
+  background: rgba(108, 140, 255, 1);
+}

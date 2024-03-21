@@ -13,24 +13,36 @@
     </section>
 
     <form class="form">
-      <label>
+      <label class="delay-one">
         Delay (ms)
         <input type="number" name="delay" required />
       </label>
 
-      <fieldset>
+      <fieldset class="chek-input">
         <legend>State</legend>
         <label>
-          <input type="radio" name="state" value="fulfilled" required />
+          <input
+            class="type-chek"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
           Fulfilled
         </label>
         <label>
-          <input type="radio" name="state" value="rejected" required />
+          <input
+            class="type-chek"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
           Rejected
         </label>
       </fieldset>
 
-      <button type="submit">Create notification</button>
+      <button class="button-style-2" type="submit">Create notification</button>
     </form>
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
