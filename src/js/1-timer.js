@@ -12,6 +12,7 @@ const options = {
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
     const currentDate = new Date();
+    const startButton = document.querySelector('[data-start]');
 
     if (selectedDate < currentDate) {
       iziToast.error({
